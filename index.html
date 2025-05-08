@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">
+        <header>
+            <div class="menu">
+                    <li class="text">Про нас</li>
+                    <li class="text">Напрямки роботи</li>
+                    <li class="text">Навчання</li>
+                    <li class="text">Наші подорожі</li>
+                    <li class="text">Наша команда</li>
+                    <li class="text">Відгуки</li>
+            </div>
+            <div class="icons">
+                <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.8342 10.1093C17.5572 10.8689 16.8342 12.1561 16.3824 12.7047L14.6227 14.3639C13.6717 15.2606 13.3932 16.6831 14.0811 17.7946C16.5127 21.7235 19.8615 24.244 22.2515 25.5434C23.3153 26.1218 24.593 25.7927 25.4306 24.9183C26.1192 24.1995 26.8642 23.4488 27.3564 23.023C28.0763 22.4 28.9902 22.586 29.5568 22.8476C29.7757 22.9487 29.9556 23.1125 30.1187 23.2901C31.3369 24.6171 33.6893 27.1443 35.0381 28.467C36.2468 29.6522 36.0964 30.5367 35.7632 30.98C35.6447 31.1376 35.4886 31.2623 35.352 31.4045C34.8561 31.9209 33.8285 32.9287 32.456 34.1009C30.4549 35.8101 28.8411 36 27.8082 36C26.7754 36 23.0313 35.4936 18.2544 32.0752C13.4775 28.6569 8.70057 23.5294 7.15131 20.6175C5.60204 17.7056 4.50464 15.4267 4.18187 12.7047C3.92366 10.5271 3.79476 10.1093 4.8274 8.40011C5.57355 7.16512 7.8743 5.33627 8.70057 4.47536C9.42022 3.72554 10.4533 4.00973 11.0491 4.33255C11.2094 4.41942 11.3464 4.53958 11.4748 4.66904C13.0879 6.29546 16.1399 9.37976 16.8342 10.1093Z" stroke="black" stroke-width="2"/>
+                    </svg>
+                <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.875 12.2273C30.875 14.6438 29.6248 18.2429 27.7223 22.3577C25.8422 26.4242 23.4104 30.8222 21.201 34.7834C20.7973 35.5072 19.5678 35.5195 19.1473 34.6664C18.1856 32.7154 17.068 30.6324 15.9415 28.5387L15.8109 28.2958C14.7241 26.2761 13.6332 24.2487 12.6527 22.2942C11.6322 20.26 10.7432 18.3282 10.1108 16.593C9.47299 14.8428 9.125 13.3682 9.125 12.2273C9.125 6.63101 13.9403 2 20 2C26.0597 2 30.875 6.63101 30.875 12.2273Z" stroke="black" stroke-width="2"/>
+                    <circle cx="20" cy="13" r="4" stroke="black" stroke-width="2"/>
+                    </svg>
+                <svg width="34" height="30" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_1238)">
+                    <g clip-path="url(#clip1_1_1238)">
+                    <rect x="2.54297" y="6.17627" width="38" height="30" rx="3" stroke="black" stroke-width="2"/>
+                    <path d="M23.6114 21.7884C22.6283 22.4144 21.3717 22.4144 20.3886 21.7884L4.67235 11.7805C2.14111 10.1687 3.28286 6.25 6.28373 6.25L37.7163 6.25C40.7171 6.25 41.8589 10.1687 39.3277 11.7805L23.6114 21.7884Z" stroke="black" stroke-width="2"/>
+                    </g>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1_1238">
+                    <rect width="44" height="40" fill="white"/>
+                    </clipPath>
+                    <clipPath id="clip1_1_1238">
+                    <rect width="64" height="39" fill="white" transform="translate(-15 1)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </div>
+        </header>
+        <section class="block1">
+            <div class="text-giraffe">
+                <h1>Giraffe Club</h1>
+                <p>Офіційний сертифікований центр
+                    підготовки до міжнародних екзаменів Cambrige</p>
+                <button id="button1" class="button1">Отримати консультацію</button>
+
+                <div id="modal" class="modal">
+                    <div class="modal-content" id="modal-content">
+                        <span id="closeModalBtn" class="close">&times;</span>
+                        <h2>Отримай консультацію</h2>
+                        <form class="consultationForm" id="consultationForm">
+                          <input type="text" id="name" name="name" placeholder="Ім'я">
+                          <input type="text" id="phone" name="phone" placeholder="Номер тел.">
+                          <button type="submit">Надіслати</button>
+                        </form>
+                      </div>
+                      <div id="success" class="success">
+                        <div class="success-content">
+                            <span id="closeModalBtn" class="close">&times;</span>
+                            <div class="text7">
+                                <p>Дякуємо!</p>
+                                <p>Ваш запит надіслано. <br>
+                                    Чекайте дзвінка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="image1" src="./src/styles/assets/svg/фото.png">
+        </section>
+    </div>
+    <section class="block2">
+        <h3>Про нас</h3>
+        <h2>Мовних шкіл багато - лідер один!</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./src/styles/assets/svg/calendar 1.png">
+                <p>6 років успішної роботи</p>
+            </div>
+            <div class="card">
+                <img src="./src/styles/assets/svg/open-book 1.png">
+                <p>Сучасні програми й навчальні матеріали</p>
+            </div>
+            <div class="card">
+                <img src="./src/styles/assets/svg/female 1.png">
+                <p>Професійні 
+                    викладачи</p>
+            </div>
+            <div class="card">
+                <img src="./src/styles/assets/svg/success 1.png">
+                <p>Переможець «Народний Бренд»
+                    (2018, 2019, 2020) </p>
+            </div>
+            <div class="card">
+                <img src="./src/styles/assets/svg/handshake 1.png">
+                <p>Топ партнер 
+                    Cambridge
+                    Assessment English</p>
+            </div>
+            <div class="card">
+                <img src="./src/styles/assets/svg/graduating-student 1.png">
+                <p>Сотні наших випускників з високим рівнем </p>
+            </div>
+        </div>
+    </section>
+    <section class="block3">
+        <h3>Напрямки роботи</h3>
+        <h2>Що ти можеш у нас знайти?</h2>
+        <div class="content1">
+            <img src="./src/styles/assets/svg/фото.png">
+            <div class="text2">
+                <div class="about">
+                    <div class="number">01</div>
+                    <p>Англійська для дітей від 1 року</p>
+                </div>
+                <div class="about">
+                    <div class="number">02</div>
+                    <p>Англійська для дорослих</p>
+                </div>
+                <div class="about">
+                    <div class="number">03</div>
+                    <p>Americanschool для школярів (1- 11 клас)</p>
+                </div>
+                <div class="about">
+                    <div class="number">04</div>
+                    <p>Підготовка до ЗНО</p>
+                </div>
+                <div class="about">
+                    <div class="number">05</div>
+                    <p>Підготовка до міжнародних екзаменів YLE, KET, PET, FCE, IELTS</p>
+                </div>
+                <div class="about">
+                    <div class="number">06</div>
+                    <p>Німецька для дорослих та дітей, віком від 3 років</p>
+                </div>
+                <div class="about">
+                    <div class="number">07</div>
+                    <p>Підготовка дітей до школи</p>
+                </div>
+                <div class="about">
+                    <div class="number">08</div>
+                    <p>Літній табір</p>
+                </div>
+                <button class="button2" id="button2">Залишити заявку</button>
+
+                <div id="modalTwo" class="modal">
+                    <div class="modal-content" id="modal-contentTwo">
+                        <span id="closeModalBtnTwo" class="close">&times;</span>
+                        <h2>Залишити заявку</h2>
+                        <form class="consultationForm" id="consultationFormTwo">
+                          <input type="text" id="name" name="name" placeholder="Ім'я">
+                          <input type="text" id="phone" name="phone" placeholder="Номер тел.">
+                          <button type="submit">Надіслати</button>
+                        </form>
+                      </div>
+                      <div id="successTwo" class="success">
+                        <div class="success-content">
+                            <span id="closeModalBtnTwo" class="close">&times;</span>
+                            <div class="text7">
+                                <p>Дякуємо!</p>
+                                <p>Ваш запит надіслано. <br>
+                                    Чекайте дзвінка</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./src/styles/assets/svg/фото.png">
+        </div>
+    </section>
+    <section class="block4">
+        <h3>Навчання</h3>
+        <div class="content2">
+            <div class="text3">
+                <h2>Вивчення іноземної мови</h2>
+                <div class="first">
+                    <div class="number">01</div>
+                    <p>У групах</p>
+                </div>
+                <div class="first">
+                    <div class="number">02</div>
+                    <p>У міні-групах</p>
+                </div>
+                <div class="first">
+                    <div class="number">03</div>
+                    <p>Індивідуально</p>
+                </div>
+            </div>
+            <img class="photo" src="./src/styles/assets/svg/фото1.png">
+        </div>
+        <div class="content3">
+            <h2>Формат курсів:</h2>
+            <div class="text4">
+                <div class="second">
+                    <div class="number">01</div>
+                    <div class="explanation">
+                        <h4>Стандартний</h4>
+                        <p>Заняття 2 рази на тиждень тривалістю від 30 до 60 хв. 
+                            (в залежності від віку).</p>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="number">02</div>
+                    <div class="explanation">
+                        <h4>Поглиблений</h4>
+                        <p>Заняття 3 рази на тиждень по 1 год. 20 хв. 
+                            З Кембриджським іспитом на новий рівень в 
+                            кінці навчального року.</p>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="number">03</div>
+                    <div class="explanation">
+                        <h4>Онлайн-курс</h4>
+                        <p>Можна обрати як стандартний, 
+                            так і поглиблений формат та вивчати онлайн</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block5">
+        <h3>Наші подорожі</h3>
+        <h2>Ми подорожуємо світом</h2>
+        <div class="cities">
+            <p>Лондон, Греція, Болгарія, Польша, різні міста України.
+                <br>
+                <br>
+                Гарною традицією «GiraffeClub» стали освітні подорожі студентів в різні країни. 
+                Окрім вивчення англійської й покращення практичних навичок мови у 
+                спеціалізованих мовних центрах світу, 
+                програми поїздок передбачають щоденні розваги й екскурсії.</p>
+        </div>
+        <div class="net">
+            <img class="photo" src="./src/styles/assets/svg/1.png">
+            <img class="photo" src="./src/styles/assets/svg/2.png">
+            <img class="photo" src="./src/styles/assets/svg/3.jpg.png">
+            <img class="photo" src="./src/styles/assets/svg/4.png">
+            <img class="photo" src="./src/styles/assets/svg/5.png">
+            <img class="photo" src="./src/styles/assets/svg/6.png">
+            <img class="photo" src="./src/styles/assets/svg/7.jpg.png">
+            <img class="photo" src="./src/styles/assets/svg/8.png">
+        </div>
+    </section>
+    <section class="block6">
+        <h3>Наша команда</h3>
+        <h2>Найкраща команда - найкращі результати</h2>
+        <div class="content4">
+            <img src="./src/styles/assets/svg/Frame 147.svg">
+            <div class="photos-teem">
+                <div class="members">
+                    <img src="./src/styles/assets/svg/teem1.png">
+                    <div class="text5">
+                        <h4>Валерія Звіранська</h4>
+                        <p>Адміністратор</p>
+                    </div>
+                </div>
+                <div class="members">
+                    <img src="./src/styles/assets/svg/team2.jpg.png">
+                    <div class="text5">
+                        <h4>Ольга Мануйлова</h4>
+                        <p>Засновниця школи.<br>
+                            <br>
+                            Має вищу педагогічну освіту.
+                            Її профіль: германські мови. Перекладач.<br>
+                            <br>
+                            Викладацький стаж: 22 роки</p>
+                    </div>
+                </div>
+                <div class="members">
+                    <img src="./src/styles/assets/svg/team3.jpg.png">
+                    <div class="text5">
+                        <h4>Наталія Шмалько</h4>
+                        <p>Адміністратор</p>
+                    </div>
+                </div>
+                <img src="./src/styles/assets/svg/Frame 146.svg">
+            </div>
+        </div>
+    </section>
+    <section class="block7">
+        <h3>Відгуки</h3>
+        <h2>Що кажуть про нас</h2>
+        <div class="coments">
+            <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="105" y="105" width="104" height="104" rx="52" transform="rotate(-180 105 105)" stroke="#DF803E" stroke-width="2"/>
+                <path d="M83 53L23 53M23 53L46 76M23 53L46 30" stroke="#DF803E" stroke-width="2"/>
+                </svg>
+            <div class="coment">
+                <div class="top">
+                    <div class="text6">
+                            <h4>Ольга Березовська</h4>
+                            <p>приватний нотаріус м.Кропивницький</p>
+                        </div>
+                        <img src="./src/styles/assets/svg/фото.png">
+                </div>
+                <p>Високий рівень викладання – викладачі прекрасні, професіонали своєї справи. Звернулися до Ольги до Жирафа Клаба за рекомендацією. 
+                    Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний дизайн офісу. 
+                    Враження лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки. Рекомендую.</p>
+            </div>
+            <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="104" height="104" rx="52" stroke="#DE742B" stroke-width="2"/>
+                <path d="M23 53H83M83 53L60 30M83 53L60 76" stroke="#DE742B" stroke-width="2"/>
+                </svg>
+        </div>
+    </section>
+    <footer>
+        <img src="./src/styles/assets/svg/Giraffe Club.png">
+
+        <div class="contacts">
+            <div class="contact">
+                <p>Номер телефону:</p>
+                <a href="+38 050 843 91 68">+38 050 843 91 68</a>
+            </div>
+            <div class="contact">
+                <p>Email:</p>
+                <a href="info@giraffe.in.ua">info@giraffe.in.ua</a>
+            </div>
+            <div class="contact">
+                <p>Адреса</p>
+                <p>м. Кропивницький, вул. Соборна, 1а</p>
+            </div>
+            <div class="contact">
+                <p>Соціальні мережі</p>
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.705 17.6183V25H21.8727C24.6553 25 25.4503 22.8202 25.5 21.7303C25.4503 16.8422 25.3311 6.51108 25.2516 4.29163C25.1721 2.07218 23.4959 1.18703 22.6677 1.02188C17.5994 1.00537 6.8764 0.98225 4.53106 1.02188C2.18571 1.06152 1.53313 3.21823 1.5 4.29163V21.7303C1.5 23.9497 3.5207 24.8349 4.53106 25H12.0839V17.6183H9.20186V13.0605H12.0839V9.84028C12.4416 6.51109 15.148 5.64576 16.4565 5.62925H20.8789V10.2366H16.705V13.0605H20.8789L20.0839 17.6183H16.705Z" stroke="black" stroke-width="2"/>
+                    </svg>
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.5" y="1" width="24" height="24" rx="6" stroke="black" stroke-width="2"/>
+                    <circle cx="13.4995" cy="12.9995" r="6.4878" stroke="black" stroke-width="2"/>
+                    <circle cx="20.7437" cy="5.70758" r="1.43902" stroke="black" stroke-width="2"/>
+                    </svg>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
